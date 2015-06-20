@@ -1,0 +1,17 @@
+main: io.github.wolfleader116.lamps.Lamps
+name: Lamps
+version: 2.0
+description: Lamps plugin
+author: WolfLeader116
+commands:
+  lamps:
+    description: Shows lamps plugin info.
+permissions:
+  lamps.create:
+    description: Allows the player to create lamps.
+    default: op
+  lamps.*:
+    description: Gives the player all lamps permissions.
+    default: op
+    children:
+      lamps.create: true
